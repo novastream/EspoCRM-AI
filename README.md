@@ -40,5 +40,7 @@ Headers: Content-Type: application/json
 Payload: { "model": "llama3:latest", "prompt": "Could you find a solution (keep it short) on how to solve the following issue. Please respond in the question language. Question: {$description}", "stream": false }
 
 **Use the following followup action**
+
 Type: Update target entity
+
 Formula: cAiResponse = json\retrieve(workflow\lastHttpResponseBody(), 'response');
