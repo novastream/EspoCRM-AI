@@ -44,3 +44,6 @@ Payload: { "model": "llama3:latest", "prompt": "Could you find a solution (keep 
 Type: Update target entity
 
 Formula: cAiResponse = json\retrieve(workflow\lastHttpResponseBody(), 'response');
+
+**Notes**
+- You may want to adjust workflowSendRequestTimeout in config.php to something like 30-90 seconds depending on hardware
